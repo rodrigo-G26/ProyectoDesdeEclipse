@@ -28,7 +28,7 @@ public class guiPrueba extends JFrame {
 			}
 		});
 	}
-
+ 
 	/**
 	 * Create the frame.
 	 */
@@ -49,6 +49,15 @@ public class guiPrueba extends JFrame {
 		});
 		btnNewButton.setBounds(238, 169, 118, 29);
 		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("SaludoR");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Hola desde mi Rama");
+			}
+		});
+		btnNewButton_1.setBounds(238, 227, 118, 29);
+		contentPane.add(btnNewButton_1);
 
 	}
 }
